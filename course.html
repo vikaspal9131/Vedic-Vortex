@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #6a0dad;
+            color: white;
+            height: 100vh;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 15px;
+            cursor: pointer;
+        }
+        .sidebar ul li:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .courses, .badges, .progress {
+            margin-top: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .course-list, .badge-list, .progress-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: #e8d8f7;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+        .progress-list .card {
+            background: #6a0dad;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li>Home</li>
+            <li>Courses</li>
+            <li>Progress</li>
+            <li>Settings</li>
+            <li>Logout</li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h2>Welcome, John Doe</h2>
+            <span>3rd Year</span>
+        </div>
+        <div class="courses">
+            <h3>My Courses</h3>
+            <div class="course-list">
+                <div class="card">MERN Development</div>
+                <div class="card">Java Programming</div>
+                <div class="card">C/C++ Basics</div>
+            </div>
+        </div>
+        <div class="badges">
+            <h3>NFT Badges</h3>
+            <div class="badge-list">
+                <div class="card">MERN To-Do List</div>
+                <div class="card">Java Interface</div>
+                <div class="card">Greedy Algorithm</div>
+            </div>
+        </div>
+        <div class="progress">
+            <h3>Progress Tracker</h3>
+            <div class="progress-list">
+                <div class="card">C/C++ - 25% Completed</div>
+                <div class="card">Java - 50% Completed</div>
+                <div class="card">MERN - 75% Completed</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

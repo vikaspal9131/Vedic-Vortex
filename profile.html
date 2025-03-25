@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background: #4a0072;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+        }
+        .sidebar h2 {
+            text-align: center;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 40px;
+        }
+        .profile-form {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-form input, .profile-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .profile-form button {
+            padding: 10px;
+            width: 100px;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .save-btn {
+            background: #4a0072;
+            color: white;
+        }
+        .cancel-btn {
+            background: #ff9800;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Settings</h2>
+        <ul>
+            <li>Edit Profile</li>
+            <li>Notification</li>
+            <li>Security</li>
+            <li>Appearance</li>
+            <li>Help</li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2>Edit Profile</h2>
+        <form class="profile-form">
+            <label>First Name</label>
+            <input type="text" value="Mehrab">
+            
+            <label>Last Name</label>
+            <input type="text" value="Bozorgi">
+            
+            <label>Email</label>
+            <input type="email" value="abc.@gmail.com">
+            
+            <label>Address</label>
+            <input type="text" value="33062 rau indore">
+            
+            <label>Contact Number</label>
+            <input type="text" value="+91 86xxxxxxxx">
+            
+            <label>City</label>
+            <select>
+                <option>Indore</option>
+            </select>
+            
+            <label>State</label>
+            <select>
+                <option>M.P</option>
+            </select>
+            
+            <label>Password</label>
+            <input type="password" value="sbdfbnd65sfdvb s">
+            
+            <button class="cancel-btn">Cancel</button>
+            <button class="save-btn">Save</button>
+        </form>
+    </div>
+</body>
+</html>

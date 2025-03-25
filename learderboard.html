@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .sidebar {
+            width: 250px;
+            background: #4B0082;
+            height: 100vh;
+            color: white;
+            padding: 20px;
+            position: fixed;
+        }
+        .sidebar .menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 0;
+        }
+        .container {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .leaderboard, .endorsement, .tokens {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            background: #4B0082;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .table th, .table td {
+            padding: 10px;
+            text-align: left;
+            background: #E6E6FA;
+        }
+        .tokens-box {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .token-card {
+            background: linear-gradient(135deg, #D8BFD8, #E6E6FA);
+            padding: 15px;
+            text-align: center;
+            width: 30%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Profile</h2>
+        <div class="menu">
+            <a href="#">Dashboard</a>
+            <a href="#">Payment Info</a>
+            <a href="#">Registration</a>
+            <a href="#">Reputation System</a>
+            <a href="#">Explore Talent</a>
+            <a href="#">Logout</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h2>Welcome, John Doe</h2>
+            <span>3rd Year</span>
+        </div>
+        <div class="leaderboard">
+            <h3>Leaderboard</h3>
+            <table class="table">
+                <tr><th>Username</th><th>Rank</th><th>Credits Earned</th></tr>
+                <tr><td>@sn809</td><td>4</td><td>400</td></tr>
+                <tr><td>@ayush123</td><td>5</td><td>367</td></tr>
+                <tr><td>@frenny56789</td><td>7</td><td>320</td></tr>
+                <tr><td>@hydra34024</td><td>8</td><td>340</td></tr>
+            </table>
+        </div>
+        <div class="endorsement">
+            <h3>Endorsement Requests</h3>
+            <table class="table">
+                <tr><td>Gaurav Singh</td><td>Amazon</td><td><button class="btn">Send Endorsement</button></td></tr>
+                <tr><td>Harshil Patidar</td><td>Meesho</td><td><button class="btn">Send Endorsement</button></td></tr>
+                <tr><td>Rajini Mehta</td><td>Flipkart</td><td><button class="btn">Send Endorsement</button></td></tr>
+            </table>
+        </div>
+        <div class="tokens">
+            <h3>Earn Reputation Tokens</h3>
+            <div class="tokens-box">
+                <div class="token-card">+1 Token DP Problems</div>
+                <div class="token-card">+1 Token Frontend Development</div>
+                <div class="token-card">+1 Token JDBC Platform</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

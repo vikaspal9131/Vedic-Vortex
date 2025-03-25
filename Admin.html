@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            background-color: #f4f7fe;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background: #3a0ca3;
+            padding: 20px;
+            color: white;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .sidebar ul {
+            list-style: none;
+        }
+        .sidebar ul li {
+            padding: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .sidebar ul li:hover {
+            background: #560bad;
+            border-radius: 5px;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .cards {
+            display: flex;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            text-align: center;
+        }
+        .charts {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .chart {
+            background: white;
+            flex: 1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>SkillifyX</h2>
+        <ul>
+            <li>Dashboard</li>
+            <li>Students List</li>
+            <li>University Details</li>
+            <li>Employers Details</li>
+            <li>Analytics</li>
+            <li>Reviews</li>
+            <li>Events</li>
+            <li>Calendar</li>
+            <li>Chat</li>
+            <li>Memberships</li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>Admin Dashboard</h1>
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h3>100</h3>
+                <p>Total Students</p>
+            </div>
+            <div class="card">
+                <h3>15</h3>
+                <p>Total Employers</p>
+            </div>
+            <div class="card">
+                <h3>65</h3>
+                <p>Students Placed</p>
+            </div>
+            <div class="card">
+                <h3>2.5 Lacs+</h3>
+                <p>Total Funds Available</p>
+            </div>
+        </div>
+        <div class="charts">
+            <div class="chart">Pie Chart</div>
+            <div class="chart">Line Chart</div>
+        </div>
+    </div>
+</body>
+</html>
